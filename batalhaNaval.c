@@ -33,6 +33,14 @@ int main() {
         //fornece a matriz, em seguida o primeiro indice, depois o segundo, o + i serve para acompanhar o for, ou seja, cada vez que o for rodar a coluna vai alterar de valor para o número 3
     }
 
+    int linha6 = 7;
+    int coluna9 = 8;
+
+    for(int i = 0; i<3;i++)
+    {
+        tabuleiro[linha6 + i][coluna9] = 3;
+    }
+
     printf("\nTabuleiro da Batalha Naval:\n");
     printf("");
     for (int i = 0; i < 10; i++) 
