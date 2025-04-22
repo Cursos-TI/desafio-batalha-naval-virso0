@@ -22,7 +22,16 @@ int main() {
         }
     }
 
-
+    printf("\nTabuleiro da Batalha Naval:\n");
+    printf("");
+    for (int i = 0; i < 10; i++) 
+        {
+        for (int j = 0; j < 10; j++) 
+        {
+            printf("%d ", tabuleiro[i][j]);
+        }
+        printf("\n");
+    }
     // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
     // Sugestão: Expanda o tabuleiro para uma matriz 10x10.
     // Sugestão: Posicione quatro navios no tabuleiro, incluindo dois na diagonal.
