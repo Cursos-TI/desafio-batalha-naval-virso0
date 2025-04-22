@@ -22,6 +22,17 @@ int main() {
         }
     }
 
+    int linha3 = 2;
+    //armazena qual o indice da linha desejada
+    int coluna5 = 4;
+    //armazena qual o indice da coluna desejada
+    for(int i=0;i<3;i++)
+    //percorre as linhas e as colunas no número de vezes que vai alterar-las
+    {
+        tabuleiro[linha3][coluna5 + i] = 3;
+        //fornece a matriz, em seguida o primeiro indice, depois o segundo, o + i serve para acompanhar o for, ou seja, cada vez que o for rodar a coluna vai alterar de valor para o número 3
+    }
+
     printf("\nTabuleiro da Batalha Naval:\n");
     printf("");
     for (int i = 0; i < 10; i++) 
