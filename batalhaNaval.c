@@ -24,12 +24,12 @@ int main() {
 
     int linha3 = 2;
     //armazena qual o indice da linha desejada
-    int coluna5 = 4;
+    int coluna4 = 3;
     //armazena qual o indice da coluna desejada
     for(int i=0;i<3;i++)
     //percorre as linhas e as colunas no número de vezes que vai alterar-las
     {
-        tabuleiro[linha3][coluna5 + i] = 3;
+        tabuleiro[linha3][coluna4 + i] = 3;
         //fornece a matriz, em seguida o primeiro indice, depois o segundo, o + i serve para acompanhar o for, ou seja, cada vez que o for rodar a coluna vai alterar de valor para o número 3
     }
 
@@ -41,21 +41,26 @@ int main() {
         tabuleiro[linha6 + i][coluna9] = 3;
     }
 
-    printf("\nTabuleiro da Batalha Naval:\n");
-    printf("");
-    for (int i = 0; i < 10; i++) 
-        {
-        for (int j = 0; j < 10; j++) 
-        {
-            printf("%d ", tabuleiro[i][j]);
-        }
-        printf("\n");
-    }
     // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
     // Sugestão: Expanda o tabuleiro para uma matriz 10x10.
     // Sugestão: Posicione quatro navios no tabuleiro, incluindo dois na diagonal.
     // Sugestão: Exiba o tabuleiro completo no console, mostrando 0 para posições vazias e 3 para posições ocupadas.
+    int linha5 = 4;
+    int coluna2=1;
+    for(int i = 0;i<3;i++)
+    {
+        for(int j = 0;j<3;j++)
+        {
+            tabuleiro[linha5+i][coluna2+i]=3;
+        }
+    }
 
+    int linha2 = 3;
+    int coluna10=9;
+    for(int i = 0;i<3;i++)
+    {
+        tabuleiro[linha2-i][coluna10-i]=3;
+    }
     // Nível Mestre - Habilidades Especiais com Matrizes
     // Sugestão: Crie matrizes para representar habilidades especiais como cone, cruz, e octaedro.
     // Sugestão: Utilize estruturas de repetição aninhadas para preencher as áreas afetadas por essas habilidades no tabuleiro.
@@ -76,6 +81,16 @@ int main() {
     // 0 0 1 0 0
     // 1 1 1 1 1
     // 0 0 1 0 0
-
+    printf("\nTabuleiro da Batalha Naval:\n");
+    printf("");
+    for (int i = 0; i < 10; i++) 
+        {
+        for (int j = 0; j < 10; j++) 
+        {
+            printf("%d ", tabuleiro[i][j]);
+        }
+        printf("\n");
+    }
+    
     return 0;
 }
