@@ -59,7 +59,7 @@ int main() {
     int coluna10=9;
     for(int i = 0;i<3;i++)
     {
-        tabuleiro[linha2-i][coluna10-i]=3;
+        tabuleiro[linha2+i][coluna10-i]=3;
     }
     // Nível Mestre - Habilidades Especiais com Matrizes
     // Sugestão: Crie matrizes para representar habilidades especiais como cone, cruz, e octaedro.
@@ -82,7 +82,6 @@ int main() {
     // 1 1 1 1 1
     // 0 0 1 0 0
     printf("\nTabuleiro da Batalha Naval:\n");
-    printf("");
     for (int i = 0; i < 10; i++) 
         {
         for (int j = 0; j < 10; j++) 
