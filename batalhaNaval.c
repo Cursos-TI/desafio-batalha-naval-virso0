@@ -71,11 +71,24 @@ int main() {
     // 0 0 1 0 0
     // 0 1 1 1 0
     // 1 1 1 1 1
+    int linha8 = 7;
+    int coluna3 = 2;
+    
+    for (int i = 0; i < 3; i++)  
+    // tamanho do cone
+    {
+        for (int j = -i; j <= i; j++)  
+        // expande para os lados, tipo pirâmide
+        {
+            tabuleiro[linha8+i][coluna3+j] = 1;
+        }
+    }
     
     // Exemplo para habilidade em octaedro:
     // 0 0 1 0 0
     // 0 1 1 1 0
     // 0 0 1 0 0
+    
 
     // Exemplo para habilidade em cruz:
     // 0 0 1 0 0
