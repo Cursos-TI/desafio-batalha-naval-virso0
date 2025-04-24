@@ -105,6 +105,21 @@ int main() {
     // 0 0 1 0 0
     // 1 1 1 1 1
     // 0 0 1 0 0
+    int linha4 = 3;
+    int coluna6 = 5;
+
+    for (int j = -2; j <= 2; j++) 
+    {
+        tabuleiro[linha4][coluna6 + j] = 1;
+    }
+
+    int linha21 = 2;
+    int coluna41=5;
+    tabuleiro[linha21][coluna41]=1;
+    //como a variavel linha2 e coluna4 ja foi utilizada, criei duas novas para poder utilizar da mesma linha sem problema
+    int linha41=4;
+    tabuleiro[linha41][coluna41]=1;
+
     printf("\nTabuleiro da Batalha Naval:\n");
     for (int i = 0; i < 10; i++) 
         {
