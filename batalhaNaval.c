@@ -88,7 +88,18 @@ int main() {
     // 0 0 1 0 0
     // 0 1 1 1 0
     // 0 0 1 0 0
-    
+    int coluna5 = 5;
+    int linha61=7;
+    for (int j = 0; j <= 2; j++) 
+    {
+        tabuleiro[linha61][coluna5 + j] = 1;
+    }
+
+    int linha51=6;
+    tabuleiro[linha51][coluna5+1]=1;
+
+    int linha7=8;
+    tabuleiro[linha7][coluna5+1]=1;
 
     // Exemplo para habilidade em cruz:
     // 0 0 1 0 0
